@@ -3,9 +3,9 @@ import { Fade } from 'react-slideshow-image';
 
 
 const heart_gif = "https://i.imgur.com/t4sYRdn.gif";
-const ghost_gif = "https://i.imgur.com/9G7yib1.gif";
+const ghost_gif = "https://i.imgur.com/Arpu9ep.gif";
 const skullglime_gif = "https://i.imgur.com/pKpttTA.gif";
-const gifs = [heart_gif,ghost_gif,skullglime_gif];
+const gifs = [ghost_gif,skullglime_gif,heart_gif];
 
 const properties = {
   duration: 2500,
