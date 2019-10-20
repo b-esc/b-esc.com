@@ -26,8 +26,92 @@
   padding: 0;
 }
 
+#navMenuPointing{
+  font-size: 2em;
+}
+
+.slide-container{
+  margin: auto;
+}
+
+.fade-item{
+  display: flex;
+}
+
+.fade-item > div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 250px;
+}
+
+.fade-item .gif-container{
+  width: 200px;
+  height: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.gif-src{
+  width:1.5em;
+  height:1.5em;
+}
+
+
+.ui.secondary.inverted.menu a.item{
+  font-weight: bold;
+  color: #EEEEEE  !important;
+  text-shadow:
+  /* first layer at 1px */
+  -1px -1px 0px #000,
+   0px -1px 0px #000,
+   1px -1px 0px #000,
+  -1px  0px 0px #000,
+   1px  0px 0px #000,
+  -1px  1px 0px #000,
+   0px  1px 0px #000,
+   1px  1px 0px #000;
+}
+
+.border_1px{
+  text-shadow:
+  /* first layer at 1px */
+  -1px -1px 0px #000,
+   0px -1px 0px #000,
+   1px -1px 0px #000,
+  -1px  0px 0px #000,
+   1px  0px 0px #000,
+  -1px  1px 0px #000,
+   0px  1px 0px #000,
+   1px  1px 0px #000,
+  /* second layer at 2px */
+  -2px -2px 0px #000,
+  -1px -2px 0px #000,
+   0px -2px 0px #000,
+   1px -2px 0px #000,
+   2px -2px 0px #000,
+   2px -1px 0px #000,
+   2px  0px 0px #000,
+   2px  1px 0px #000,
+   2px  2px 0px #000,
+   1px  2px 0px #000,
+   0px  2px 0px #000,
+  -1px  2px 0px #000,
+  -2px  2px 0px #000,
+  -2px  1px 0px #000,
+  -2px  0px 0px #000,
+  -2px -1px 0px #000;
+}
+
+.border_1px div{
+  color: #DBFFD6;
+  font-weight: bold;
+  font-size: 2.25em;
+}
+
 .border_2px{
-  color: #DABAE1;
+  color: #FFCBC1;
   text-shadow:
        /* first layer at 1px */
        -1px -1px 0px #000,
@@ -59,4 +143,19 @@
 
 .navButton{
   float:left;
+}
+
+@-webkit-keyframes shine {
+	0%, 10% {
+		background-position: -1000px;
+	}
+	20% {
+		background-position: top left;
+	}
+	90% {
+		background-position: top right;
+	}
+	100% {
+		background-position: 1000px;
+	}
 }

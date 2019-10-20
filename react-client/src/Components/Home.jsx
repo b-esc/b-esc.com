@@ -19,13 +19,15 @@ import {
 } from "semantic-ui-react";
 
 class Home extends Component{
-  state = {fixed: false, activeItem: 'home'}
+
+  state = {fixed: false, activeItem: 'home',}
 
   handleItemClick = (e, {name}) => this.setState({activeItem:name})
   veilFixedNav = () => this.setState({fixed: false});
   revealFixedNav = () => this.setState({fixed: true});
 
   render(){
+    const { color } = 'teal';
     const { children } = this.props;
     const { fixed, activeItem } = this.state;
 
@@ -41,10 +43,11 @@ class Home extends Component{
             id="headSegment"
             inverted
             textAlign="center"
-            style={{ minHeight: 700, padding: "1em 0em"}}
+            style={{ minHeight: 700, padding: "0em 0em"}}
             vertical
           >
           <Menu pointing
+            id="navMenuPointing"
             fixed={fixed ? "top" : null}
             inverted={!fixed}
             secondary={!fixed}
@@ -78,7 +81,8 @@ class Home extends Component{
 }
 
 Home.propTypes = {
-  children : PropTypes.node
+  children : PropTypes.node,
+  color: PropTypes.string,
 }
 
 
