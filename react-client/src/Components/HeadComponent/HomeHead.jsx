@@ -19,6 +19,7 @@ import {
 } from "semantic-ui-react";
 
 
+
 const name_texts = ["b-esc‎‎‎‎‎‎‎","ben_escobar","ben‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎"];
 
 class HomeHead extends Component{

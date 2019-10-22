@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Link} from 'react-router-dom';
 import { browserHistory } from 'react-router';
 import Home from './Home';
 import Navbar from './HeadComponent/Navbar';
+import Fade from 'react-reveal/Fade';
 
 class App extends Component{
   render(){

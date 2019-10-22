@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import HomeHead from './HeadComponent/HomeHead';
 import PropTypes from "prop-types";
+import Fade from 'react-reveal/Fade';
+import Particles from 'react-particles-js';
 
 import {
   Button,
@@ -39,6 +41,7 @@ class Home extends Component{
           onBottomPassed={this.revealFixedNav}
           onBottomPassedReverse={this.veilFixedNav}
         >
+        <Fade right>
           <Segment
             id="headSegment"
             inverted
@@ -46,6 +49,8 @@ class Home extends Component{
             style={{ minHeight: 700, padding: "0em 0em"}}
             vertical
           >
+          <div id="bgHead">
+          </div>
           <Menu pointing
             id="navMenuPointing"
             fixed={fixed ? "top" : null}
@@ -73,7 +78,31 @@ class Home extends Component{
           </Menu>
           <HomeHead/>
       </Segment>
+      </Fade>
     </Visibility>
+    <Fade left>
+    <Segment
+      id="bodySegment"
+      textAlign="center"
+      style={{ minHeight: 700, padding: "0em 0em",paddingTop:"1em"}}
+      vertical
+    >
+      <Grid className="border_1px">
+      <div id="particlesBg">
+          <Particles />
+      </div>
+        <Grid.Column width={8}>
+        About
+        </Grid.Column>
+        <Grid.Column width={2}>
+        Filler
+        </Grid.Column>
+        <Grid.Column width={3}>
+        Contact
+        </Grid.Column>
+      </Grid>
+      </Segment>
+    </Fade>
       {children}
     </Responsive>
     )
