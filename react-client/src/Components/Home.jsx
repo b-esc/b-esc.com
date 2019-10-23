@@ -3,6 +3,7 @@ import HomeHead from './HeadComponent/HomeHead';
 import PropTypes from "prop-types";
 import Fade from 'react-reveal/Fade';
 import Particles from 'react-particles-js';
+import HomeBody from './BodyComponent/HomeBody';
 
 import {
   Button,
@@ -80,29 +81,7 @@ class Home extends Component{
       </Segment>
       </Fade>
     </Visibility>
-    <Fade left>
-    <Segment
-      id="bodySegment"
-      textAlign="center"
-      style={{ minHeight: 700, padding: "0em 0em",paddingTop:"1em"}}
-      vertical
-    >
-      <Grid className="border_1px">
-      <div id="particlesBg">
-          <Particles />
-      </div>
-        <Grid.Column width={8}>
-        About
-        </Grid.Column>
-        <Grid.Column width={2}>
-        Filler
-        </Grid.Column>
-        <Grid.Column width={3}>
-        Contact
-        </Grid.Column>
-      </Grid>
-      </Segment>
-    </Fade>
+    <HomeBody/>
       {children}
     </Responsive>
     )
