@@ -19,11 +19,11 @@ ul{
 .particlesFg{
   margin-left: 5em !important;
   margin-right: 5em !important;
-  background: rgba(204, 204, 255, 0.9);
+  background: rgba(121, 111, 122, 0.9);
 }
 
 #bodySegment{
-  background: rgba(204, 204, 255, 0.9);
+  background: rgba(167, 155, 168, 0.7);
   height:100%;
 }
 #bgHead{
@@ -176,13 +176,19 @@ li{
   color: white !important;
   font-size: .7em !important;
   font-weight: normal !important;
+  text-align: left;
+}
+
+.bodyText li{
+font-family: 'Roboto Slab', sans-serif;
+  margin-top:1em;
+  line-height: 1.25em;
 }
 
 .contactText{
   margin-top: 1em;
   color: white !important;
   font-size: 1em !important;
-  font-weight: normal !important;
 }
 
 
