@@ -6,7 +6,9 @@ a{
   text-decoration: none !important; /* no underline */
   color: white !important;
 }
-
+.Timeline-line{
+  z-index:0 !important;
+}
 a:hover{
   color: #dfc8e3 !important;
 }
