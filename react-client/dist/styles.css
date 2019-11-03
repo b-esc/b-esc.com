@@ -3,12 +3,12 @@ body{
 }
 a{
   font-family: 'Fira Sans', sans-serif !important;
-  text-decoration: none; /* no underline */
-  color: inherit;
+  text-decoration: none !important; /* no underline */
+  color: white !important;
 }
 
 a:hover{
-  color: #dfc8e3;
+  color: #dfc8e3 !important;
 }
 div{
   font-family: 'Fira Sans', sans-serif !important;

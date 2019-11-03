@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 import Fade from 'react-reveal/Fade';
 import Particles from 'react-particles-js';
 import HomeBody from './BodyComponent/HomeBody';
+import TimelineBody from './BodyComponent/TimelineBody';
 import {
   BrowserRouter as Router,
   Switch,
@@ -96,8 +97,7 @@ class Home extends Component{
     <Route path="/" exact component={HomeBody}>
     {/*<HomeBody/>*/}
     </Route>
-    <Route path="/timeline">
-    <a>test timeline</a>
+    <Route path="/timeline" exact component={TimelineBody}>
     </Route>
     <Route path="/projects">
     <a>test projects</a>
