@@ -6,10 +6,14 @@ a{
   text-decoration: none !important; /* no underline */
   color: white !important;
 }
+.two.wide.column{
+  z-index:1 !important;
+}
 .ui.grid>.row{
   padding-top: 2em !important;
   padding-bottom: 2em !important;
 }
+
 
 .ui.card>.content{
   font-size: .75em !important;
@@ -19,6 +23,7 @@ a{
 .Timeline-line{
   z-index:0 !important;
   top:0 !important;
+  height:100% !important;
   background-color: pink !important;
 }
 a:hover{
@@ -65,6 +70,8 @@ ul{
   background: #382a40;
   height:100%;
 }
+
+
 #bgHead{
   -webkit-filter: blur(5px) grayscale(70%);
   -moz-filter:blur(5px) grayscale(70%);

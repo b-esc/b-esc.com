@@ -37,22 +37,22 @@ class TimelineBody extends Component{
         >
           <div className="particlesFg" style={{fontSize:"2em"}}>
           <div id="particlesBg">
-          <Particles params={particlesjsConfig} height={4250}/>
+          <Particles params={particlesjsConfig} height={4000}/>
           </div>
           <div style={{paddingTop:"1em"}}>
           <Timeline
             direction="left"
-            icon="user"
+            icon="users"
             title="Another club"
             time="September 2019"
             description="Founded the Programming Interview Club at Iowa State"
-            color="green"
+            color="purple"
             tags={['school','fun']}
             lineHeight={17}
           />
           <Timeline
             direction="right"
-            icon="user"
+            icon="facebook f"
             title="Got a job"
             time="September 2019"
             description="Accepted a position as a Software Engineer at Facebook"
@@ -62,7 +62,7 @@ class TimelineBody extends Component{
           />
           <Timeline
             direction="left"
-            icon="user"
+            icon="pencil alternate"
             title="Senior Year"
             time="August 2019"
             description="Began my fourth year at Iowa State."
@@ -72,7 +72,7 @@ class TimelineBody extends Component{
           />
           <Timeline
             direction="right"
-            icon="facebook"
+            icon="facebook f"
             title="the book"
             time="May 2019"
             description="Began SWE internship at Facebook. Machine Learning / Ads"
@@ -82,7 +82,7 @@ class TimelineBody extends Component{
           />
           <Timeline
             direction="left"
-            icon="user"
+            icon="trophy"
             title="COM S Featured Student"
             time="April 2019"
             description="Feature article published to 'Atanasoff Today'"
@@ -92,7 +92,7 @@ class TimelineBody extends Component{
           />
           <Timeline
             direction="right"
-            icon="user"
+            icon="trophy"
             title="Student Employee of the Year Nomination"
             time="April 2019"
             description="Selected as 1 of 3 students of distinction for research contributions"
@@ -102,7 +102,7 @@ class TimelineBody extends Component{
           />
           <Timeline
             direction="left"
-            icon="user"
+            icon="trophy"
             title="LAS Featured Student"
             time="April 2019"
             description="Selected to have my academic path shared with new students during orientation"
@@ -112,7 +112,7 @@ class TimelineBody extends Component{
           />
           <Timeline
             direction="right"
-            icon="user"
+            icon="trophy"
             title="Linux Club Award"
             time="February 2019"
             description="'Newcomer of the Year Award' received from the College of Engineering"
@@ -122,9 +122,9 @@ class TimelineBody extends Component{
           />
           <Timeline
             direction="left"
-            icon="user"
+            icon="users"
             title="Linux Club"
-            time="September 2019"
+            time="September 2018"
             description="Founded the Linux Club at Iowa State"
             color="green"
             tags={['school', 'fun']}
@@ -132,7 +132,7 @@ class TimelineBody extends Component{
           />
           <Timeline
             direction="right"
-            icon="user"
+            icon="pencil alternate"
             title="Junior Year"
             time="August 2018"
             description="Began third year at Iowa State"
@@ -152,7 +152,7 @@ class TimelineBody extends Component{
           />
           <Timeline
             direction="right"
-            icon="user"
+            icon="add"
             title="First Internship"
             time="June 2018"
             description="Began SWE internship at OptumRx/UnitedHealth Group"
@@ -162,17 +162,17 @@ class TimelineBody extends Component{
           />
           <Timeline
             direction="left"
-            icon="user"
+            icon="pencil alternate"
             title="Sophomore Year"
             time="August 2017"
             description="Began second year at Iowa State"
-            color="black"
+            color="red"
             tags={['school']}
             lineHeight={0}
           />
           <Timeline
             direction="right"
-            icon="user"
+            icon="pencil alternate"
             title="Freshman Year"
             time="August 2016"
             description="Began first year at Iowa State."
