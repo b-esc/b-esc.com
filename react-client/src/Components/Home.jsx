@@ -4,6 +4,12 @@ import PropTypes from "prop-types";
 import Fade from 'react-reveal/Fade';
 import Particles from 'react-particles-js';
 import HomeBody from './BodyComponent/HomeBody';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from 'react-router-dom';
 
 import {
   Button,
@@ -37,6 +43,7 @@ class Home extends Component{
 
     return(
       <Responsive minWidth={Responsive.onlyTablet.minWidth}>
+      <Router>
         {/*<Visibility
           once={false}
           onBottomPassed={this.revealFixedNav}
@@ -60,17 +67,20 @@ class Home extends Component{
             size="large"
           >
               <Menu.Item
+                as={Link} to='/'
                 name='home'
                 active={activeItem==='home'}
                 onClick={this.handleItemClick}
               />
               <Menu.Menu position='right'>
                 <Menu.Item
+                  as={Link} to='/timeline'
                   name='timeline'
                   active={activeItem==='timeline'}
                   onClick={this.handleItemClick}
                 />
                 <Menu.Item
+                  as={Link} to='/projects'
                   name='projects'
                   active={activeItem==='projects'}
                   onClick={this.handleItemClick}
@@ -78,11 +88,24 @@ class Home extends Component{
               </Menu.Menu>
           </Menu>
           <HomeHead/>
+
       </Segment>
       </Fade>
     {/*</Visibility>*/}
-    <HomeBody/>
+    <Switch>
+    <Route path="/" exact component={HomeBody}>
+    {/*<HomeBody/>*/}
+    </Route>
+    <Route path="/timeline">
+    <a>test timeline</a>
+    </Route>
+    <Route path="/projects">
+    <a>test projects</a>
+    </Route>
+    {/* concern over route behavior w children*/}
       {children}
+    </Switch>
+    </Router>
     </Responsive>
     )
   }

@@ -29,13 +29,13 @@ const particlesjsConfig = {
       }
     },
     "color": {
-      "value": "#e5bceb"
+      "value": "#6e576d"
     },
     "shape": {
-      "type": "star",
+      "type": "circle",
       "stroke": {
         "width": 1,
-        "color": "#cf9e9e"
+        "color": "#6e576d"
       },
       "polygon": {
         "nb_sides": 5
