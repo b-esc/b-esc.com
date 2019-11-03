@@ -184,7 +184,7 @@ class HomeBody extends Component{
             </Grid.Column>
             <Grid.Column width={7} style={{paddingTop:"1em"}}>
             <div className="bodySegmentTitle">
-            Contact
+            Connect
             </div>
             <br></br>
             <ul className="contactText">

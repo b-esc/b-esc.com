@@ -3,9 +3,19 @@ body{
 }
 a{
   font-family: 'Fira Sans', sans-serif !important;
+  text-decoration: none; /* no underline */
+  color: inherit;
+}
+
+a:hover{
+  color: #dfc8e3;
 }
 div{
   font-family: 'Fira Sans', sans-serif !important;
+}
+
+.item{
+  font-size: 1.25em;
 }
 
 #particlesBg{

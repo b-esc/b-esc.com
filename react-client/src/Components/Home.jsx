@@ -37,11 +37,11 @@ class Home extends Component{
 
     return(
       <Responsive minWidth={Responsive.onlyTablet.minWidth}>
-        <Visibility
+        {/*<Visibility
           once={false}
           onBottomPassed={this.revealFixedNav}
           onBottomPassedReverse={this.veilFixedNav}
-        >
+        >*/}
         <Fade right>
           <Segment
             id="headSegment"
@@ -55,7 +55,7 @@ class Home extends Component{
           <Menu pointing
             id="navMenuPointing"
             fixed={fixed ? "top" : null}
-            inverted={!fixed}
+            inverted={true}
             secondary={!fixed}
             size="large"
           >
@@ -80,7 +80,7 @@ class Home extends Component{
           <HomeHead/>
       </Segment>
       </Fade>
-    </Visibility>
+    {/*</Visibility>*/}
     <HomeBody/>
       {children}
     </Responsive>
