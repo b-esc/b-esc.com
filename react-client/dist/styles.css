@@ -17,13 +17,28 @@ ul{
   list-style-type: none;
 }
 .particlesFg{
-  margin-left: 5em !important;
-  margin-right: 5em !important;
-  background: rgba(121, 111, 122, 0.9);
+  font-size: 2.75em;
+  margin-left: 1em !important;
+  margin-right: 1em !important;
+}
+
+.bodySegmentTitle{
+  color: white;
+  font-size: 1.75em;
+  text-shadow:
+  /* first layer at 1px */
+  -1px -1px 0px black,
+   0px -1px 0px black,
+   1px -1px 0px black,
+  -1px  0px 0px black,
+   1px  0px 0px black,
+  -1px  1px 0px black,
+   0px  1px 0px black,
+   1px  1px 0px black;
 }
 
 #bodySegment{
-  background: rgba(167, 155, 168, 0.7);
+  background: #584961;
   height:100%;
 }
 #bgHead{
@@ -65,9 +80,9 @@ ul{
     filter:blur(2px) grayscale(70%);
   }
   to{
-    -webkit-filter: blur(5px) grayscale(20%);
-    -moz-filter:blur(5px) grayscale(20%);
-    filter:blur(5px) grayscale(20%);
+    -webkit-filter: blur(5px) grayscale(35%);
+    -moz-filter:blur(5px) grayscale(35%);
+    filter:blur(5px) grayscale(35%);
   }
 }
 
@@ -78,9 +93,9 @@ ul{
     filter:blur(2px) grayscale(70%);
   }
   to{
-    -webkit-filter: blur(5px) grayscale(20%);
-    -moz-filter:blur(5px) grayscale(20%);
-    filter:blur(5px) grayscale(20%);
+    -webkit-filter: blur(5px) grayscale(35%);
+    -moz-filter:blur(5px) grayscale(35%);
+    filter:blur(5px) grayscale(35%);
   }
 }
 
@@ -123,6 +138,7 @@ ul{
 
 #navMenuPointing{
   font-size: 2em;
+  margin-top: 0em;
 }
 
 .slide-container{
@@ -191,6 +207,9 @@ font-family: 'Roboto Slab', sans-serif;
   font-size: 1em !important;
 }
 
+.body_padding{
+  padding-top: 0.5em;
+}
 
 .border_1px{
   text-shadow:

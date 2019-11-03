@@ -20,7 +20,7 @@ import {
 
 
 
-const name_texts = ["b-esc‎‎‎‎‎‎‎","ben_escobar","ben‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎"];
+const name_texts = ["b-esc‎‎‎‎‎‎‎","ben.escobar","ben‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎"];
 
 class HomeHead extends Component{
   state = {

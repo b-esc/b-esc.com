@@ -137,19 +137,19 @@ const AboutText = props => (
     Hey, I'm Ben.
     </li>
     <li>
-    Thank you for visiting my personal site.
+    Thanks for visiting my personal site.
     </li>
     <li>
-    I'm currently a senior in Computer Science and Bioinformatics at Iowa State University.
+    I'm a senior at Iowa State University studying Computer Science and Bioinformatics.
     </li>
     <li>
-    I founded both the Linux Club and Programming Interview Club during my time here.
+    I founded the Linux Club and Programming Interview Club during my time here.
     </li>
     <li>
     Come June 2020, I'll be working as a Software Engineer at Facebook.
     </li>
     <li>
-    Linux, Software Engineering, and Biology comprise the bulk of my interests,
+    I'm interested in Linux, Software Engineering, and Biology,
     often complementing one another on account of similar tooling.
     </li>
     </ul>
@@ -164,23 +164,27 @@ class HomeBody extends Component{
         <Segment
           id="bodySegment"
           textAlign="center"
-          style={{ minHeight: 700, padding: "0em 0em",paddingTop:"1em"}}
+          style={{ minHeight: 1000, padding: "0em 0em",paddingTop:"1em"}}
           vertical
         >
-          <Grid className="border_1px particlesFg">
+          <Grid className="particlesFg">
           <div id="particlesBg">
-              <Particles params={particlesjsConfig} />
+              <Particles params={particlesjsConfig} height={window.outerHeight}/>
           </div>
-            <Grid.Column width={7}>
+            <Grid.Column width={7} style={{paddingTop:"1em"}}>
+            <div className="bodySegmentTitle">
             About
+            </div>
             <br></br>
             <AboutText/>
             </Grid.Column>
-            <Grid.Column width={2}>
+            <Grid.Column width={1}>
 
             </Grid.Column>
-            <Grid.Column width={6}>
+            <Grid.Column width={7} style={{paddingTop:"1em"}}>
+            <div className="bodySegmentTitle">
             Contact
+            </div>
             <br></br>
             <ul className="contactText">
               <li>
@@ -194,6 +198,9 @@ class HomeBody extends Component{
               </li>
               <li>
               twitter <Icon name="twitter"/>
+              </li>
+              <li>
+              linkedIn <Icon name="linkedin alternate"/>
               </li>
             </ul>
             </Grid.Column>
