@@ -6,8 +6,14 @@ a{
   text-decoration: none !important; /* no underline */
   color: white !important;
 }
+.ui.grid>.row{
+  padding-top: 2em !important;
+  padding-bottom: 2em !important;
+}
+
 .Timeline-line{
   z-index:0 !important;
+  top:0 !important;
   background-color: pink !important;
 }
 a:hover{

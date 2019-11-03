@@ -31,14 +31,15 @@ class TimelineBody extends Component{
         <Segment
           id="bodySegment"
           textAlign="center"
-          style={{ minHeight: 1000, padding: "0em 0em",paddingTop:"1em"}}
+          style={{padding: "0em 0em",paddingTop:"1em"}}
           height={window.outerHeight}
           vertical
         >
-          <div className="particlesFg">
+          <div className="particlesFg" style={{fontSize:"2em"}}>
           <div id="particlesBg">
-          <Particles params={particlesjsConfig} height={window.outerHeight}/>
+          <Particles params={particlesjsConfig} height={3000}/>
           </div>
+          <div style={{paddingTop:"1em"}}>
           <Timeline
             direction="left"
             icon="user"
@@ -47,7 +48,7 @@ class TimelineBody extends Component{
             description="Description."
             color="red"
             tags={['tag1', 'tag2']}
-            lineHeight={4}
+            lineHeight={10}
           />
           <Timeline
             direction="right"
@@ -59,6 +60,87 @@ class TimelineBody extends Component{
             tags={['tag1', 'tag2']}
             lineHeight={0}
           />
+          <Timeline
+            direction="left"
+            icon="user"
+            title="Title"
+            time="Time"
+            description="Description."
+            color="red"
+            tags={['tag1', 'tag2']}
+            lineHeight={0}
+          />
+          <Timeline
+            direction="right"
+            icon="user"
+            title="Title"
+            time="Time"
+            description="Description."
+            color="red"
+            tags={['tag1', 'tag2']}
+            lineHeight={0}
+          />
+          <Timeline
+            direction="left"
+            icon="user"
+            title="Title"
+            time="Time"
+            description="Description."
+            color="red"
+            tags={['tag1', 'tag2']}
+            lineHeight={0}
+          />
+          <Timeline
+            direction="right"
+            icon="user"
+            title="Title"
+            time="Time"
+            description="Description."
+            color="red"
+            tags={['tag1', 'tag2']}
+            lineHeight={0}
+          />
+          <Timeline
+            direction="left"
+            icon="user"
+            title="Title"
+            time="Time"
+            description="Description."
+            color="red"
+            tags={['tag1', 'tag2']}
+            lineHeight={0}
+          />
+          <Timeline
+            direction="right"
+            icon="user"
+            title="Title"
+            time="Time"
+            description="Description."
+            color="red"
+            tags={['tag1', 'tag2']}
+            lineHeight={0}
+          />
+          <Timeline
+            direction="left"
+            icon="user"
+            title="Title"
+            time="August 2017"
+            description="Began seond year at Iowa State."
+            color="red"
+            tags={['tag1', 'tag2']}
+            lineHeight={0}
+          />
+          <Timeline
+            direction="right"
+            icon="user"
+            title="Began my first year at Iowa State"
+            time="August 2016"
+            description="Description."
+            color="red"
+            tags={['tag1', 'tag2']}
+            lineHeight={0}
+          />
+          </div>
           </div>
           </Segment>
         </Fade>
