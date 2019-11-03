@@ -69,7 +69,7 @@ const particlesjsConfig = {
     "line_linked": {
       "enable": true,
       "distance": 150,
-      "color": "#ffffff",
+      "color": "#625763",
       "opacity": 0.4,
       "width": 1
     },
@@ -143,7 +143,7 @@ const AboutText = props => (
     I'm a senior at Iowa State University studying Computer Science and Bioinformatics.
     </li>
     <li>
-    I founded the Linux Club and Programming Interview Club during my time here.
+    I founded the Linux Club and the Programming Interview Club during my time here.
     </li>
     <li>
     Come June 2020, I'll be working as a Software Engineer at Facebook.
@@ -165,6 +165,7 @@ class HomeBody extends Component{
           id="bodySegment"
           textAlign="center"
           style={{ minHeight: 1000, padding: "0em 0em",paddingTop:"1em"}}
+          height={window.outerHeight}
           vertical
         >
           <Grid className="particlesFg">
@@ -191,16 +192,16 @@ class HomeBody extends Component{
               resume <Icon name="file text"/>
               </li>
               <li>
-              github <Icon name="github alternate" />
+              <a href="https://github.com/b-esc">github</a> <Icon name="github alternate" />
               </li>
               <li>
-              facebook <Icon name="facebook f"/>
+              <a href="https://www.facebook.com/debianprincess">facebook</a> <Icon name="facebook f"/>
               </li>
               <li>
-              twitter <Icon name="twitter"/>
+              <a href="https://twitter.com/debianprincess"> twitter </a> <Icon name="twitter"/>
               </li>
               <li>
-              linkedIn <Icon name="linkedin alternate"/>
+              <a href="https://www.linkedin.com/in/besc0/">linkedIn</a> <Icon name="linkedin alternate"/>
               </li>
             </ul>
             </Grid.Column>
