@@ -37,107 +37,147 @@ class TimelineBody extends Component{
         >
           <div className="particlesFg" style={{fontSize:"2em"}}>
           <div id="particlesBg">
-          <Particles params={particlesjsConfig} height={3000}/>
+          <Particles params={particlesjsConfig} height={4250}/>
           </div>
           <div style={{paddingTop:"1em"}}>
           <Timeline
             direction="left"
             icon="user"
-            title="Title"
-            time="Time"
-            description="Description."
-            color="red"
-            tags={['tag1', 'tag2']}
-            lineHeight={10}
+            title="Another club"
+            time="September 2019"
+            description="Founded the Programming Interview Club at Iowa State"
+            color="green"
+            tags={['school','fun']}
+            lineHeight={17}
           />
           <Timeline
             direction="right"
             icon="user"
-            title="Title"
-            time="Time"
-            description="Description."
-            color="red"
-            tags={['tag1', 'tag2']}
+            title="Got a job"
+            time="September 2019"
+            description="Accepted a position as a Software Engineer at Facebook"
+            color="blue"
+            tags={['work','python']}
             lineHeight={0}
           />
           <Timeline
             direction="left"
             icon="user"
-            title="Title"
-            time="Time"
-            description="Description."
+            title="Senior Year"
+            time="August 2019"
+            description="Began my fourth year at Iowa State."
             color="red"
-            tags={['tag1', 'tag2']}
+            tags={['school']}
             lineHeight={0}
           />
           <Timeline
             direction="right"
-            icon="user"
-            title="Title"
-            time="Time"
-            description="Description."
-            color="red"
-            tags={['tag1', 'tag2']}
+            icon="facebook"
+            title="the book"
+            time="May 2019"
+            description="Began SWE internship at Facebook. Machine Learning / Ads"
+            color="blue"
+            tags={['work','python','sql']}
             lineHeight={0}
           />
           <Timeline
             direction="left"
             icon="user"
-            title="Title"
-            time="Time"
-            description="Description."
-            color="red"
-            tags={['tag1', 'tag2']}
+            title="COM S Featured Student"
+            time="April 2019"
+            description="Feature article published to 'Atanasoff Today'"
+            color="yellow"
+            tags={['school']}
             lineHeight={0}
           />
           <Timeline
             direction="right"
             icon="user"
-            title="Title"
-            time="Time"
-            description="Description."
-            color="red"
-            tags={['tag1', 'tag2']}
+            title="Student Employee of the Year Nomination"
+            time="April 2019"
+            description="Selected as 1 of 3 students of distinction for research contributions"
+            color="yellow"
+            tags={['research','handwriting']}
             lineHeight={0}
           />
           <Timeline
             direction="left"
             icon="user"
-            title="Title"
-            time="Time"
-            description="Description."
-            color="red"
-            tags={['tag1', 'tag2']}
+            title="LAS Featured Student"
+            time="April 2019"
+            description="Selected to have my academic path shared with new students during orientation"
+            color="yellow"
+            tags={['school']}
             lineHeight={0}
           />
           <Timeline
             direction="right"
             icon="user"
-            title="Title"
-            time="Time"
-            description="Description."
-            color="red"
-            tags={['tag1', 'tag2']}
+            title="Linux Club Award"
+            time="February 2019"
+            description="'Newcomer of the Year Award' received from the College of Engineering"
+            color="yellow"
+            tags={['school', 'fun']}
             lineHeight={0}
           />
           <Timeline
             direction="left"
             icon="user"
-            title="Title"
+            title="Linux Club"
+            time="September 2019"
+            description="Founded the Linux Club at Iowa State"
+            color="green"
+            tags={['school', 'fun']}
+            lineHeight={0}
+          />
+          <Timeline
+            direction="right"
+            icon="user"
+            title="Junior Year"
+            time="August 2018"
+            description="Began third year at Iowa State"
+            color="red"
+            tags={['school']}
+            lineHeight={0}
+          />
+          <Timeline
+            direction="left"
+            icon="user"
+            title="Research Position"
+            time="August 2018"
+            description="Center for Statistics and Applications in Forensic Evidence"
+            color="blue"
+            tags={['research','handwriting','javascript','R','node']}
+            lineHeight={0}
+          />
+          <Timeline
+            direction="right"
+            icon="user"
+            title="First Internship"
+            time="June 2018"
+            description="Began SWE internship at OptumRx/UnitedHealth Group"
+            color="orange"
+            tags={['work','javascript','sql','node']}
+            lineHeight={0}
+          />
+          <Timeline
+            direction="left"
+            icon="user"
+            title="Sophomore Year"
             time="August 2017"
-            description="Began seond year at Iowa State."
-            color="red"
-            tags={['tag1', 'tag2']}
+            description="Began second year at Iowa State"
+            color="black"
+            tags={['school']}
             lineHeight={0}
           />
           <Timeline
             direction="right"
             icon="user"
-            title="Began my first year at Iowa State"
+            title="Freshman Year"
             time="August 2016"
-            description="Description."
+            description="Began first year at Iowa State."
             color="red"
-            tags={['tag1', 'tag2']}
+            tags={['school']}
             lineHeight={0}
           />
           </div>

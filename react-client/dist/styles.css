@@ -11,6 +11,11 @@ a{
   padding-bottom: 2em !important;
 }
 
+.ui.card>.content{
+  font-size: .75em !important;
+  padding: .5em .5em !important;
+}
+
 .Timeline-line{
   z-index:0 !important;
   top:0 !important;
