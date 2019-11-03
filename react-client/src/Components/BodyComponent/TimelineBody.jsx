@@ -35,7 +35,10 @@ class TimelineBody extends Component{
           height={window.outerHeight}
           vertical
         >
+          <div className="particlesFg">
           <div id="particlesBg">
+          <Particles params={particlesjsConfig} height={window.outerHeight}/>
+          </div>
           <Timeline
             direction="left"
             icon="user"
@@ -45,9 +48,17 @@ class TimelineBody extends Component{
             color="red"
             tags={['tag1', 'tag2']}
             lineHeight={4}
-          >
-          </Timeline>
-              <Particles params={particlesjsConfig} height={window.outerHeight}/>
+          />
+          <Timeline
+            direction="right"
+            icon="user"
+            title="Title"
+            time="Time"
+            description="Description."
+            color="red"
+            tags={['tag1', 'tag2']}
+            lineHeight={0}
+          />
           </div>
           </Segment>
         </Fade>

@@ -8,6 +8,7 @@ a{
 }
 .Timeline-line{
   z-index:0 !important;
+  background-color: pink !important;
 }
 a:hover{
   color: #dfc8e3 !important;
