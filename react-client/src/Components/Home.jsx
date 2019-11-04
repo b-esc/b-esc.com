@@ -5,6 +5,7 @@ import Fade from 'react-reveal/Fade';
 import Particles from 'react-particles-js';
 import HomeBody from './BodyComponent/HomeBody';
 import TimelineBody from './BodyComponent/TimelineBody';
+import particlesjsConfig from './BodyComponent/ParticlesConfig'
 import {
   BrowserRouter as Router,
   Switch,
@@ -93,6 +94,19 @@ class Home extends Component{
       </Segment>
       </Fade>
     {/*</Visibility>*/}
+    <Fade left>
+    <Segment
+      id="bodySegment"
+      textAlign="center"
+      style={{ minHeight: 1000, padding: "0em 0em",paddingTop:"1em"}}
+      height={window.outerHeight}
+      vertical
+    >
+      <div className="particlesFg">
+      <div id="particlesBg">
+          <Particles params={particlesjsConfig} height={window.outerHeight}/>
+      </div>
+
     <Switch>
     <Route path="/" exact component={HomeBody}>
     {/*<HomeBody/>*/}
@@ -105,6 +119,10 @@ class Home extends Component{
     {/* concern over route behavior w children*/}
       {children}
     </Switch>
+
+    </div>
+    </Segment>
+  </Fade>
     </Router>
     </Responsive>
     )

@@ -1,10 +1,10 @@
 const particlesjsConfig = {
   "particles": {
     "number": {
-      "value": 104,
+      "value": 80,
       "density": {
         "enable": true,
-        "value_area": 800
+        "value_area": 500
       }
     },
     "color": {

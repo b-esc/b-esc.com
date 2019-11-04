@@ -50,18 +50,8 @@ const AboutText = props => (
 class HomeBody extends Component{
   render (){
       return(
-        <Fade left>
-        <Segment
-          id="bodySegment"
-          textAlign="center"
-          style={{ minHeight: 1000, padding: "0em 0em",paddingTop:"1em"}}
-          height={window.outerHeight}
-          vertical
-        >
-          <Grid className="particlesFg">
-          <div id="particlesBg">
-              <Particles params={particlesjsConfig} height={window.outerHeight}/>
-          </div>
+
+          <Grid>
             <Grid.Column width={7} style={{paddingTop:"1em"}}>
             <div className="bodySegmentTitle">
             About
@@ -96,8 +86,7 @@ class HomeBody extends Component{
             </ul>
             </Grid.Column>
           </Grid>
-          </Segment>
-        </Fade>
+
     )
   }
 }

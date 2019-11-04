@@ -27,19 +27,8 @@ import {
 class TimelineBody extends Component{
   render (){
       return(
-        <Fade right>
-        <Segment
-          id="bodySegment"
-          textAlign="center"
-          style={{padding: "0em 0em",paddingTop:"1em"}}
-          height={window.outerHeight}
-          vertical
-        >
-          <div className="particlesFg" style={{fontSize:"2em"}}>
-          <div id="particlesBg">
-          <Particles params={particlesjsConfig} height={4000}/>
-          </div>
           <div style={{paddingTop:"1em"}}>
+          <Fade>
           <Timeline
             direction="left"
             icon="users"
@@ -80,6 +69,8 @@ class TimelineBody extends Component{
             tags={['work','python','sql']}
             lineHeight={0}
           />
+          </Fade>
+          <Fade>
           <Timeline
             direction="left"
             icon="trophy"
@@ -120,6 +111,8 @@ class TimelineBody extends Component{
             tags={['school', 'fun']}
             lineHeight={0}
           />
+          </Fade>
+          <Fade>
           <Timeline
             direction="left"
             icon="users"
@@ -180,10 +173,8 @@ class TimelineBody extends Component{
             tags={['school']}
             lineHeight={0}
           />
+          </Fade>
           </div>
-          </div>
-          </Segment>
-        </Fade>
     )
   }
 }
