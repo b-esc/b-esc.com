@@ -50,7 +50,7 @@ const AboutText = props => (
 class HomeBody extends Component{
   render (){
       return(
-
+        <Fade>
           <Grid>
             <Grid.Column width={7} style={{paddingTop:"1em"}}>
             <div className="bodySegmentTitle">
@@ -86,7 +86,7 @@ class HomeBody extends Component{
             </ul>
             </Grid.Column>
           </Grid>
-
+          </Fade>
     )
   }
 }

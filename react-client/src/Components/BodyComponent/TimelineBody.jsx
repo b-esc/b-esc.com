@@ -25,19 +25,22 @@ import {
 
 
 class TimelineBody extends Component{
+
   render (){
       return(
+        <div>
           <div style={{paddingTop:"1em"}}>
+          <div style={{height:"100%"}} className="Timeline-line"></div>
           <Fade>
           <Timeline
             direction="left"
             icon="users"
-            title="Another club"
+            title="Programming Interview Club"
             time="September 2019"
             description="Founded the Programming Interview Club at Iowa State"
             color="purple"
             tags={['school','fun']}
-            lineHeight={17}
+            lineHeight={0}
           />
           <Timeline
             direction="right"
@@ -112,7 +115,6 @@ class TimelineBody extends Component{
             lineHeight={0}
           />
           </Fade>
-          <Fade>
           <Timeline
             direction="left"
             icon="users"
@@ -173,7 +175,7 @@ class TimelineBody extends Component{
             tags={['school']}
             lineHeight={0}
           />
-          </Fade>
+          </div>
           </div>
     )
   }

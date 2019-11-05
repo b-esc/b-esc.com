@@ -6,6 +6,8 @@ import Particles from 'react-particles-js';
 import HomeBody from './BodyComponent/HomeBody';
 import TimelineBody from './BodyComponent/TimelineBody';
 import particlesjsConfig from './BodyComponent/ParticlesConfig'
+import ParticleAnimation from 'react-particle-animation'
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -29,18 +31,21 @@ import {
   Visibility
 } from "semantic-ui-react";
 
-class Home extends Component{
 
+
+class Home extends Component{
   state = {fixed: false, activeItem: 'home',}
 
-  handleItemClick = (e, {name}) => this.setState({activeItem:name})
+  handleItemClick = (e, {name}) => this.setState({activeItem:name,pHeight:document.getElementById("bodySegment").clientHeight })
   veilFixedNav = () => this.setState({fixed: false});
   revealFixedNav = () => this.setState({fixed: true});
-
+  componentDidMount(){
+    console.log(particlesjsConfig)
+  }
   render(){
     const { color } = 'teal';
     const { children } = this.props;
-    const { fixed, activeItem } = this.state;
+    const { fixed, activeItem, pHeight } = this.state;
 
 
     return(
@@ -104,7 +109,10 @@ class Home extends Component{
     >
       <div className="particlesFg">
       <div id="particlesBg">
-          <Particles params={particlesjsConfig} height={window.outerHeight}/>
+      <Particles
+      id = "test1"
+      height={"5500px"}
+      params={particlesjsConfig}/>
       </div>
 
     <Switch>

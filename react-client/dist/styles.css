@@ -21,9 +21,8 @@ a{
 }
 
 .Timeline-line{
-  z-index:0 !important;
   top:0 !important;
-  height:100% !important;
+  z-index:0 !important;
   background-color: pink !important;
 }
 a:hover{
@@ -39,8 +38,9 @@ div{
 
 #particlesBg{
   position: absolute;
-  width:100%;
+  width:85%;
   height:100%;
+  overflow:hidden;
 }
 ul{
   list-style-type: none;
