@@ -28,7 +28,7 @@ class TimelineBody extends Component{
 
   render (){
       return(
-        <div>
+        <div className="timelineWrapper">
           <div style={{paddingTop:"1em"}}>
           <div style={{height:"100%"}} className="Timeline-line"></div>
           <Fade>

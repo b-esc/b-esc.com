@@ -9,12 +9,22 @@ a{
 .two.wide.column{
   z-index:1 !important;
 }
+.ui.label{
+  font-size: 1em;
+}
+.ui.attached.pointing.label{
+  font-size: .75em;
+}
+
 .ui.grid>.row{
   padding-top: 2em !important;
   padding-bottom: 2em !important;
 }
 
-
+.content{
+  line-height: 1.25em;
+  margin-top: 1em !important;
+}
 .ui.card>.content{
   font-size: .75em !important;
   padding: .5em .5em !important;
@@ -38,7 +48,7 @@ div{
 
 #particlesBg{
   position: absolute;
-  width:85%;
+  width:95%;
   height:100%;
   overflow:hidden;
 }

@@ -103,7 +103,7 @@ class Home extends Component{
     <Segment
       id="bodySegment"
       textAlign="center"
-      style={{ minHeight: 1000, padding: "0em 0em",paddingTop:"1em"}}
+      style={{ minHeight: 800, padding: "0em 0em",paddingTop:"1em"}}
       height={window.outerHeight}
       vertical
     >

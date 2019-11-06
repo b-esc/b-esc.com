@@ -1,7 +1,7 @@
 const particlesjsConfig = {
   "particles": {
     "number": {
-      "value": 80,
+      "value": 100,
       "density": {
         "enable": false,
         "value_area": 300
@@ -22,8 +22,8 @@ const particlesjsConfig = {
       "random": false,
       "anim": {
         "enable": false,
-        "speed": 1,
-        "opacity_min": .3,
+        "speed": 2,
+        "opacity_min": .4,
         "sync": false
       }
     },
@@ -38,8 +38,8 @@ const particlesjsConfig = {
       }
     },
     "line_linked": {
-      "enable": false,
-      "distance": 125,
+      "enable": true,
+      "distance": 50,
       "color": "#ffffff",
       "opacity": .8,
       "width": 1
