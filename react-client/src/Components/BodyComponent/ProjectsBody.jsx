@@ -27,10 +27,10 @@ import {
 var titles = ["Ads Format Optimization","Handwriter","Handwriter Webapp","Cynonymous","NavLogger", "b-esc.com"]
 var dates = ["Summer 2019","Fall 2018","Spring 2019","Spring 2018","Summer 2018","Fall 2019"]
 var descs = ["Machine Learning, Ranking",
-"Statistic Modeling, Algorithms",
+"Statistical Modeling, Algorithms",
 "Web implementation of R Handwriter Package",
 "4chan Clone",
-"Infrastructure improvement suite, Devops",
+"Infrastructure improvement Suite, Devops",
 "Personal site, Nodejs + Reactjs"]
 var contents = ["Python, SQL, Facebook Ads",
 "R, Python, Statistical Software",

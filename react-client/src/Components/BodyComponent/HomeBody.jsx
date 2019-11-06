@@ -3,6 +3,8 @@ import PropTypes from "prop-types";
 import Fade from 'react-reveal/Fade';
 import Particles from 'react-particles-js';
 import particlesjsConfig from './ParticlesConfig'
+import resumePDF from '../../documents/bescobar_f19_resume.pdf';
+
 import {
   Button,
   Container,
@@ -69,7 +71,7 @@ class HomeBody extends Component{
             <br></br>
             <ul className="contactText">
               <li>
-              resume <Icon name="file text"/>
+              <a href={resumePDF}> resume </a> <Icon name="file text"/>
               </li>
               <li>
               <a href="https://github.com/b-esc">github</a> <Icon name="github alternate" />
