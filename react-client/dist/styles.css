@@ -24,7 +24,10 @@ a{
 .content{
   line-height: 1.25em;
   margin-top: 1em !important;
+  text-align: center;
 }
+
+
 .ui.card>.content{
   font-size: .75em !important;
   padding: .5em .5em !important;

@@ -5,10 +5,11 @@ import Particles from 'react-particles-js';
 import particlesjsConfig from './ParticlesConfig'
 import Timeline from 'react-timeline-semantic-ui';
 import Popup from 'reactjs-popup';
-
+import ProjectBlock from './ProjectBlock'
 
 import {
   Button,
+  Card,
   Container,
   Divider,
   Grid,
@@ -23,49 +24,63 @@ import {
   Visibility
 } from "semantic-ui-react";
 
-const card_test = (
-  <Card>
-    <Image src='https://react.semantic-ui.com/images/avatar/large/matthew.png' wrapped ui={false} />
-    <Card.Content>
-      <Card.Header>Matthew</Card.Header>
-      <Card.Meta>
-        <span className='date'>Joined in 2015</span>
-      </Card.Meta>
-      <Card.Description>
-        Matthew is a musician living in Nashville.
-      </Card.Description>
-    </Card.Content>
-    <Card.Content extra>
-      <a>
-        <Icon name='user' />
-        22 Friends
-      </a>
-    </Card.Content>
-  </Card>)
-class ProjectsBody extends Component{
-  render(){
-    <div style={{paddingTop:"1em"}}>
-    <Grid columns={3} divided>
-      <Grid.Row>
-      <Grid.Column>
-      </Grid.Column>
-      <Grid.Column>
-      </Grid.Column>
-      <Grid.Column>
-      </Grid.Column>
-      </Grid.Row>
+var titles = ["Ads Format Optimization","Handwriter","Handwriter Webapp","Cynonymous","NavLogger", "b-esc.com"]
+var dates = ["Summer 2019","Fall 2018","Spring 2019","Spring 2018","Summer 2018","Fall 2019"]
+var descs = ["Machine Learning, Ranking",
+"Statistic Modeling, Algorithms",
+"Web implementation of R Handwriter Package",
+"4chan Clone",
+"Infrastructure improvement suite, Devops",
+"Personal site, Nodejs + Reactjs"]
+var contents = ["Python, SQL, Facebook Ads",
+"R, Python, Statistical Software",
+"R, Nodejs, Expressjs, MongoDB",
+"Javascript, SQL, Nodejs",
+"Javascript, C#, Nodejs, Bootstrap",
+"Javascript, ReactJs, Nodejs"]
 
-      <Grid.Row>
-      <Grid.Column>
-      </Grid.Column>
-      <Grid.Column>
-      </Grid.Column>
-      <Grid.Column>
-      </Grid.Column>
-      </Grid.Row>
-    </Grid>
-    </div>
+var pblocks = []
+
+for(var i = 0; i < titles.length; i++){
+  var pblock = (<div><ProjectBlock title={titles[i]} content={contents[i]} date={dates[i]} header={titles[i]} desc={descs[i]}/></div>);
+  pblocks.push(pblock);
+}
+
+
+class ProjectsBody extends Component{
+
+
+  render(){
+    return(
+      <div className="projectsWrapper">
+      <Grid verticalAlign="middle" centered columns={3} divided >
+        <Grid.Row centered columns={3}>
+        <Grid.Column centered style={{textAlign: "center"}}>
+        {pblocks[0]}
+        </Grid.Column>
+        <Grid.Column>
+        {pblocks[1]}
+        </Grid.Column>
+        <Grid.Column>
+        {pblocks[2]}
+        </Grid.Column>
+        </Grid.Row>
+
+        <Grid.Row centered columns={3}>
+        <Grid.Column>
+        {pblocks[3]}
+        </Grid.Column>
+        <Grid.Column>
+        {pblocks[4]}
+        </Grid.Column>
+        <Grid.Column>
+        {pblocks[5]}
+        </Grid.Column>
+        </Grid.Row>
+      </Grid>
+      </div>
+    )
   }
 }
 
-export default TimelineBody;
+export default ProjectsBody;

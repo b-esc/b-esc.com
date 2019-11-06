@@ -7,6 +7,7 @@ import HomeBody from './BodyComponent/HomeBody';
 import TimelineBody from './BodyComponent/TimelineBody';
 import particlesjsConfig from './BodyComponent/ParticlesConfig'
 import ParticleAnimation from 'react-particle-animation'
+import ProjectsBody from './BodyComponent/ProjectsBody'
 
 import {
   BrowserRouter as Router,
@@ -121,8 +122,7 @@ class Home extends Component{
     </Route>
     <Route path="/timeline" exact component={TimelineBody}>
     </Route>
-    <Route path="/projects">
-    <a>test projects</a>
+    <Route path="/projects" exact component={ProjectsBody}>
     </Route>
     {/* concern over route behavior w children*/}
       {children}
